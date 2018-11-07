@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     # 自己写的应用
     'users.apps.UsersConfig',
+    'verifications.apps.AppConfig',
 ]
 
 MIDDLEWARE = [
@@ -188,3 +189,4 @@ REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'fight_mall.utils.exceptions.exception_handler',
 }
+AUTH_USER_MODEL = 'users.User'
