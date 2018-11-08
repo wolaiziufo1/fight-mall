@@ -211,3 +211,90 @@ INFO 2018-11-08 10:48:14,769 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 
 INFO 2018-11-08 10:48:29,806 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
 INFO 2018-11-08 10:48:30,903 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
 INFO 2018-11-08 10:48:33,792 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
+INFO 2018-11-08 12:00:07,628 basehttp 124 "GET /usernames/13111111111/count/ HTTP/1.1" 200 9679
+INFO 2018-11-08 12:00:17,290 basehttp 124 "GET /mobiles/13111111111/count/ HTTP/1.1" 200 9644
+WARNING 2018-11-08 12:00:32,283 base 152 Not Found: /mobiles/wwwwwwwwwwwwwwwwwwww/count/
+WARNING 2018-11-08 12:00:32,284 basehttp 124 "GET /mobiles/wwwwwwwwwwwwwwwwwwww/count/ HTTP/1.1" 404 2616
+INFO 2018-11-08 12:00:42,413 basehttp 124 "GET /usernames/wwwwwwwwwwwwwwwwwwww/count/ HTTP/1.1" 200 9742
+WARNING 2018-11-08 12:00:47,232 base 152 Not Found: /usernames/wwwwwwwwwwwwwwwwwwwww/count/
+WARNING 2018-11-08 12:00:47,232 basehttp 124 "GET /usernames/wwwwwwwwwwwwwwwwwwwww/count/ HTTP/1.1" 404 2625
+INFO 2018-11-08 12:00:50,906 basehttp 124 "GET /usernames/wwwwwwwwwwwwwwwwwwww/count/ HTTP/1.1" 200 9742
+INFO 2018-11-08 12:01:00,212 basehttp 124 "GET /usernames/wwwww/count/ HTTP/1.1" 200 9637
+INFO 2018-11-08 12:01:22,842 basehttp 124 "GET /usernames/213sdas/count/ HTTP/1.1" 200 9651
+INFO 2018-11-08 12:44:05,220 basehttp 124 "GET /usernames/213sdas/count/ HTTP/1.1" 302 0
+INFO 2018-11-08 12:44:37,514 basehttp 124 "GET /usernames/wwwww/count/ HTTP/1.1" 302 0
+WARNING 2018-11-08 15:13:03,116 basehttp 124 "POST /users/ HTTP/1.1" 400 237
+WARNING 2018-11-08 15:15:00,476 basehttp 124 "POST /users/ HTTP/1.1" 400 108
+WARNING 2018-11-08 15:15:16,305 basehttp 124 "POST /users/ HTTP/1.1" 400 116
+WARNING 2018-11-08 15:16:40,304 basehttp 124 "POST /users/ HTTP/1.1" 400 39
+WARNING 2018-11-08 15:16:52,320 basehttp 124 "POST /users/ HTTP/1.1" 400 40
+WARNING 2018-11-08 15:17:02,162 basehttp 124 "POST /users/ HTTP/1.1" 400 37
+INFO 2018-11-08 15:17:48,394 basehttp 124 "GET /mobiles/13111111111/count/ HTTP/1.1" 200 9644
+INFO 2018-11-08 15:18:05,543 basehttp 124 "GET /mobiles/13111111111/count/ HTTP/1.1" 200 9644
+INFO 2018-11-08 15:18:41,875 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9552
+ERROR 2018-11-08 15:19:14,376 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'allow' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the UserSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo17/lib/python3.5/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'allow' is an invalid keyword argument for this function
+
+ERROR 2018-11-08 15:19:14,442 basehttp 124 "POST /users/ HTTP/1.1" 500 23384
+INFO 2018-11-08 15:38:44,112 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9552
+INFO 2018-11-08 15:39:04,561 basehttp 124 "POST /users/ HTTP/1.1" 201 53
+WARNING 2018-11-08 15:47:00,884 base 152 Not Found: /sms_code/1322222222/
+WARNING 2018-11-08 15:47:00,885 basehttp 124 "GET /sms_code/1322222222/ HTTP/1.1" 404 2727
+INFO 2018-11-08 15:47:10,307 basehttp 124 "GET /sms_code/13222222222/ HTTP/1.1" 200 9552
+WARNING 2018-11-08 15:47:36,013 basehttp 124 "POST /users/ HTTP/1.1" 400 59
+INFO 2018-11-08 15:47:45,217 basehttp 124 "POST /users/ HTTP/1.1" 201 145
