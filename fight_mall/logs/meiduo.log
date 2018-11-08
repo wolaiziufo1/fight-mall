@@ -152,3 +152,62 @@ INFO 2018-11-07 20:09:10,255 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 
 INFO 2018-11-07 20:09:11,944 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
 INFO 2018-11-07 20:09:17,674 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
 INFO 2018-11-07 20:10:02,328 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9552
+INFO 2018-11-07 20:38:13,180 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9552
+INFO 2018-11-07 20:38:13,208 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-11-07 20:38:13,208 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-11-07 20:38:13,224 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-11-07 20:38:13,225 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-11-07 20:38:13,225 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-11-07 20:38:13,229 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-11-07 20:38:13,230 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-11-07 20:38:13,231 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-11-07 20:38:13,234 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-11-07 20:38:13,236 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+WARNING 2018-11-08 10:41:07,390 base 152 Not Found: /
+WARNING 2018-11-08 10:41:07,406 basehttp 124 "GET / HTTP/1.1" 404 2104
+WARNING 2018-11-08 10:41:07,504 base 152 Not Found: /favicon.ico
+WARNING 2018-11-08 10:41:07,504 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2155
+INFO 2018-11-08 10:41:12,297 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9552
+WARNING 2018-11-08 10:41:12,484 tasks 17 发送验证码短信[失败][ mobile: 13111111111 ]
+INFO 2018-11-08 10:43:05,397 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9552
+INFO 2018-11-08 10:43:05,425 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:43:05,429 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:43:05,430 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:43:05,430 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:43:05,445 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:43:05,446 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:43:05,446 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:43:05,447 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:43:05,447 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:43:05,448 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+WARNING 2018-11-08 10:43:05,553 tasks 17 发送验证码短信[失败][ mobile: 13111111111 ]
+INFO 2018-11-08 10:45:13,282 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9552
+WARNING 2018-11-08 10:45:13,388 tasks 17 发送验证码短信[失败][ mobile: 13111111111 ]
+INFO 2018-11-08 10:47:52,633 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9552
+INFO 2018-11-08 10:47:52,645 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:52,646 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:52,648 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:52,653 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:52,653 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:52,654 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:52,655 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:52,670 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:52,671 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:52,672 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,399 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
+INFO 2018-11-08 10:47:54,418 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,422 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,422 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,423 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,424 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,434 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,436 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,437 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,438 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:47:54,439 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-11-08 10:48:11,601 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
+INFO 2018-11-08 10:48:13,193 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
+INFO 2018-11-08 10:48:14,769 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
+INFO 2018-11-08 10:48:29,806 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
+INFO 2018-11-08 10:48:30,903 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
+INFO 2018-11-08 10:48:33,792 basehttp 124 "GET /sms_code/13111111111/ HTTP/1.1" 200 9568
