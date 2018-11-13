@@ -5,6 +5,8 @@ from users.models import User
 from rest_framework.response import Response
 from rest_framework.generics import CreateAPIView
 from users.serializers import UserSerializer
+from rest_framework.generics import RetrieveAPIView
+from .serializers import UserDetailSerializer
 
 
 # Create your views here.
@@ -36,3 +38,12 @@ class UserView(CreateAPIView):
     # 校验数据
     # 保存数据
     # 返回结果
+
+
+class UserDetailView(RetrieveAPIView):
+
+    serializer_class = UserDetailSerializer
+
+    def get_object(self):
+        # print(self.request.user)
+        return self.request.user

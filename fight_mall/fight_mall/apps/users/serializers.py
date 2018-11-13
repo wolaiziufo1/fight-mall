@@ -88,3 +88,10 @@ class UserSerializer(serializers.ModelSerializer):
         user.token = token
         # print(user)
         return user
+
+
+class UserDetailSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = '__all__'
